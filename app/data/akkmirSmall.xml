@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpc>
+	<sender>6673127650</sender>
+	<reciever>6673127650_site</reciever>
+	<full_exchange>1</full_exchange>
+	<regions>
+		<region>
+			<id>dbe5f5ea-b75a-11e9-80ef-00155d0bfb06</id>
+			<name>Нижний Тагил</name>
+		</region>
+		<region>
+			<id>93827ac0-1cb6-11ea-812d-00155d0bfb05</id>
+			<name>Полевской </name>
+		</region>
+		<region>
+			<id>f619a33c-ba82-11ea-8154-00155d0bfb06</id>
+			<name>Тобольск</name>
+		</region>
+		<region>
+			<id>f662faa5-029b-11e8-8dcf-0015179b1da1</id>
+			<name>Екатеринбург</name>
+		</region>
+		<region>
+			<id>15749eba-029c-11e8-8dcf-0015179b1da1</id>
+			<name>Тюмень</name>
+		</region>
+		<region>
+			<id>31f07310-029c-11e8-8dcf-0015179b1da1</id>
+			<name>Серов</name>
+		</region>
+		<region>
+			<id>e18a2cb9-04d8-11e8-8dcf-0015179b1da1</id>
+			<name>Горный щит</name>
+		</region>
+	</regions>
+</gpc>
