@@ -9,6 +9,10 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(xmlparser());
 
-require('./app/routes')(app, {})
+app.post('/xmlhub', (req, res) => {
+
+  res.send(req.body)
+
+})
 
 app.listen(port, () => console.log('listening on port ' + port))
