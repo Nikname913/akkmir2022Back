@@ -54,10 +54,12 @@ const fs = require('fs'); module.exports = (app, db = null) => {
     
     for ( key in xmldata.gpc ) { consoleAnswer += `Название поля: ${key}\n` }
   
-    res.send(`
+    false && res.send(`
       success. dataType: ${typeof(xmldata)}
       Список доступных полей:
       ${consoleAnswer}`)
+
+    res.send(xmldata)
   
   })
 
