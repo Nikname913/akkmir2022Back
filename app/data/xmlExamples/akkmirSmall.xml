@@ -3644,6 +3644,26 @@
 		</property>
 	</properties>
 	<images/>
+	<clients>
+		<client>
+			<id>c0da74f6-bb29-11e8-80cb-00155d0bfb06</id>
+			<name>Шипов Николай</name>
+			<bonus>100</bonus>
+			<type>1</type>
+			<site_id>19958</site_id>
+			<phone>9068085023</phone>
+			<sms>0</sms>
+		</client>
+		<client>
+			<id>c0da74f6-bb29-11e8-80cb-00155d0bfb06</id>
+			<name>Иван Иванов</name>
+			<bonus>100</bonus>
+			<type>1</type>
+			<site_id>19958</site_id>
+			<phone>9068085022</phone>
+			<sms>0</sms>
+		</client>
+	</clients>
 	<files>
 		<file>full_18_05_22_01_00.xml</file>
 	</files>

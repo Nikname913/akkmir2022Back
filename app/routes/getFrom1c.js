@@ -11,7 +11,7 @@ const fs = require('fs'); module.exports = (app, db = null) => {
     const jsonFileCategories = './app/data/akkmirCatalogLocalCategories.json'
     const jsonFileDirections = './app/data/akkmirCatalogLocalDirections.json'
     const jsonFileProducts = './app/data/akkmirCatalogLocalProducts.json'
-  
+    const dataFileUsers = './app/data/dataFileUsers.json'
     const dataFileName = './app/data/dataFileName.json'
   
     const regions = xmldata.gpc.regions
@@ -20,6 +20,7 @@ const fs = require('fs'); module.exports = (app, db = null) => {
     const directions = xmldata.gpc.directions
     const products = xmldata.gpc.products
     const files = xmldata.gpc.files
+    const users = xmldata.gpc.clients
   
     fs.writeFile(jsonFile, JSON.stringify(xmldata), error => {
       if (error) throw error
@@ -42,6 +43,10 @@ const fs = require('fs'); module.exports = (app, db = null) => {
     })
   
     fs.writeFile(jsonFileProducts, JSON.stringify(products), error => {
+      if (error) throw error
+    })
+
+    fs.writeFile(dataFileUsers, JSON.stringify(users), error => {
       if (error) throw error
     })
   
