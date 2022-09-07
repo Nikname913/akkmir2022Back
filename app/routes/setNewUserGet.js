@@ -1,9 +1,9 @@
 const fs = require('fs'); module.exports = (app, db = null) => {
 
-  db === null && null; app.post('/newUser', (req, res) => {
+  db === null && null; app.get('/newUserGet', (req, res) => {
 
-    const userData = req.body
     const usersJson = './app/data/dataFileUsers.json'
+    const { number, auth, name, email, car } = req.query
 
     // { "number": "89068085023",
     //   "auth": "sms",
@@ -13,14 +13,22 @@ const fs = require('fs'); module.exports = (app, db = null) => {
 
     let users = fs.readFileSync('./app/data/dataFileUsers.json', 'utf-8')
     let userObject = JSON.parse(users)
+    const userData = {
+      number,
+      auth,
+      name,
+      email,
+      car
+    }
 
     userObject.data.push(userData)
-
     fs.writeFile(usersJson, JSON.stringify(userObject), error => {
 
       if (error) throw error
     
     })
+
+    res.send(JSON.stringify(userObject))
 
   })
 
