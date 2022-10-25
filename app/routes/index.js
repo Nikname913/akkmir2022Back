@@ -1,29 +1,36 @@
 const getFrom1c = require('./getFrom1c')
+const getFrom1cForSelection = require('./getFrom1cForSelection')
 const getProducts = require('./getProducts')
 const getOrderProducts = require('./getOrderProducts')
 const getStartPage = require('./getStartPage')
 const getCategories = require('./getCategories')
+const getDirections = require('./getDirections')
 const getProps = require('./getProps')
 const getUsers = require('./getUsers')
+const getMarks = require('./getMarks')
+const getModels = require('./getModels')
+const getGenerations = require('./getGenerations')
+const getEngines = require('./getEngines')
 const setNewUser = require('./setNewUser')
 const setNewUserGet = require('./setNewUserGet')
 
 module.exports = (app, db) => {
 
   getFrom1c(app, db)
+  getFrom1cForSelection(app, db)
   getProducts(app, db)
   getOrderProducts(app, db)
   getStartPage(app, db)
   getCategories(app, db)
+  getDirections(app, db)
   getProps(app, db)
   getUsers(app, db)
+  getMarks(app, db)
+  getModels(app, db)
+  getGenerations(app, db)
+  getEngines(app, db)
 
   setNewUser(app, db)
   setNewUserGet(app, db)
-
-  // ------------------------
-  // техдолг, с post запросом непонятки при записи json
-  // даных о пользователе в файл, временно перекинуто на get
-  // ------------------------
 
 }
